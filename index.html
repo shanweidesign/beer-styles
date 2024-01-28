@@ -180,25 +180,12 @@
                 </div>
                 <div id="chartabv"></div>
             </div>
-            <!-- TEXT -->
-            <div id="ALCRationale">
-                <h3 class = "standardParaTitle">Design Rationale</h3>
-                <p class = "standardParagraph">
-                    Similar to the line chart above, the five most common beer styles are compared. The x-axis represents the alcohol content, and the y-axis represents the number of products. On the x-axis, the scale used is alcohol by volume (ABV); the greater the number, the stronger the beer. In daily life, the most common form of ABV is percentage, where 2% alcohol content is equal to 0.02 ABV. From this chart, you can see the product quantity distribution of each beer in different alcohol strength ranges.
-                </p>
-            </div>
-            <div id="ALCData">
-                <h3 class = "standardParaTitle">Data Analysis</h3>
-                <p class = "standardParagraph">
-                    The data analysis process is similar to the previous bitterness distribution visualization. Here we look at the alcohol content instead if bitterness. The two variables are ABV and the number of products. 
-                </p>
-            </div>
-
-
 
             
             <div id="TasteTitle3">
                 <h3 class = "SectionTitle">Compare beer style across alcohol content and bitterness.</h3>
+                <p class = "standardParagraph">
+                    Explore the relationship between alcohol content (ABV) and bitterness (IBU) across beer styles with our interactive scatter plot. The x-axis shows IBU for bitterness, and the y-axis shows ABV for alcohol strength, with colors differentiating the beer styles. Click to filter by style and see the correlation.</p> <br><br>
             </div>
 
             <!-- INTERACTIVE CHART -->
@@ -240,18 +227,11 @@
             <div id="BNAExplanation">
                 <h3 class = "standardParaTitle">Design Rationale</h3>
                 <p class = "standardParagraph">
-                    This visualization uses a scatter plot to show the alcohol content and bitterness of the 5 styles of beer. The x-axis represents bitterness (IBU) and the y-axis represents alcohol content (ABV). The color coding here is used to distinguish different beer styles.The audience can also select the "beer style" to be displayed by clicking the filter.
-                </p>
-                <p class = "standardParagraph">
-                    Scatter plot can display two variables at the same time and reveal the relation between them. On the scatter plot, we can compare bitterness and alcohol content at the same time to see the relationship between the two variables. It can be seen that bitterness is positively correlated with alcohol content, and beer with higher alcohol content is usually more bitter. 
+                    The scatter plot simultaneously displays the ABV and IBU, revealing the interplay between alcohol strength and bitterness. Each dot represents an individual beer product, with a total of 667 plotted, allowing for a detailed examination of each beer's characteristics compared to others. Typically, a higher ABV is associated with increased bitterness.
                 </p>
             </div>
     
-            <div id="BNAData" >
-                <h3 class = "standardParaTitle">Data Analysis</h3>
-                <p class = "standardParagraph">
-                    Each point represents a beer product, a total of 667 different beer products are drawn.. Unlike the line chart above, in this scatter chart, the audience can see each beer product and carefully review the relevant data.</p>
-            </div>
+           
 
         </div>
         <script src="./scriptIbu.js"></script>
@@ -264,6 +244,9 @@
             <div id="LocationTitle">
                 <button class="partTag">Part 3: Location</button>
                 <h3 class = "SectionTitle">Where are the five most common beer styles produced in the United States?</h3>
+                <p class = "standardParagraph">
+                This circular grouped bar chart showcases the production of the five most common beer styles across various states in the U.S. It highlights that Colorado and California are leading producers, with Colorado being the top for four styles.</p> <br><br>
+
             </div>
             <div id="LocationImage">
                 <img src="Images/Location01.svg" alt="Beer Bitterness Alcohol Scatter Plot">
@@ -277,13 +260,13 @@
             <div id="LocationRationale" class="threeInARow">
                 <h3 class = "standardParaTitle">Design Rationale</h3>
                 <p class = "standardParagraph">
-                    Colors are used to encode different styles. In group, the bars are arranged in descending order. In this way, we can see which states produce more. A advantage of circular layout is efficient use of space. One disadvantage of the circular layout is that the bar data is more difficult to read. It is necessary to use more prominent auxiliary lines, thus, the circular grids are drawn over the bars.
+                 Colors are used to encode different styles. Within each group, bars are arranged in descending order, highlighting the states with higher production. The circular layout optimizes space but can make data reading challenging. To address this, prominent auxiliary lines, or circular grids, are overlaid on the bars for enhanced readability.
                 </p>
             </div>
                 <div id="LocationData" class="threeInARow">
                 <h3 class = "standardParaTitle">Data Analysis</h3>
                 <p class = "standardParagraph">
-                    When processing the data, because the winery and the location information of the winery are in another table. So I first joined the data in the two tables. Then, in order to achieve a more readable visualization, I streamlined the data and removed some states with smaller production volumes (less than five). 
+                    To create a more readable visualization with reduced visual and information clutter, I focused on states with higher production by removing those with less than five products from the dataset.
                 </p>
             </div>
 
@@ -291,7 +274,7 @@
             THE ENDING PAGE -->
             <div id = "endingPage">
                 <h2>Thank you for watching</h2>
-                <button class="buttonOne"><a href="#NavElement1">BACK TO TOP</a></button>
+                <button class="buttonOne"><a href="#NavElement1">Back to top</a></button>
             </div>
 
         </div>
@@ -304,20 +287,15 @@
 
             <div id = "footerLeft">
                 <p class = "LegendContentText">Designed by Shan Wei</p>
-                <p class = "LegendContentText">wei.sha@northeastern.edu</p>
+                <p class = "LegendContentText">contact@shanweidesign.com</p>
                 <p class = "LegendContentText">2020. 12. 16</p>
             </div>
 
-            <div id = "footerCenter">
-                <p class = "LegendContentText">ARTG 5330 Visual Technology 1</p>
-                <p class = "LegendContentText">Fall 2020, Final Project</p>
-                <p class = "LegendContentText">Instructed by Steven Braun</p>
-            </div>
-
+          
             <div id = "footerRight">
                 <p class = "LegendContentText">Northeastern University</p>
-                <p class = "LegendContentText">College of Arts, Media and Design</p>
-                <p class = "LegendContentText">Boston, MA, UAS</p>
+                <p class = "LegendContentText">Fall 2020, ARTG 5330</p>
+                <p class = "LegendContentText">Instructed by Steven Braun</p>
             </div>
 
         </div>
