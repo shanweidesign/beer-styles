@@ -62,12 +62,12 @@
                 </div>
 
             <div class="TOCright"> 
-                <button class="buttonOne"><a href="#StylesTitle">PART 1: STYLES</a></button>
-                <p class = "standardParagraph">1 Visualization : How many different styles of craft beer are available in the market? What are the most common styles?</p>
-                <button class="buttonOne"><a href="#TasteTitle">PART 2: TASTE</a></button>
-                <p class = "standardParagraph">3 Visualizations :  What are the differences in the bitterness and alcohol content of different styles of beer?</p>
-                <button class="buttonOne"><a href="#LocationTitle">PART 3: LOCATION</a></button>
-                <p class = "standardParagraph">1 Visualization : Where are the most common types  of beer produced in USA?</p>
+                <button class="buttonOne"><a href="#StylesTitle">Part 1: Styles</a></button>
+                <p class = "standardParagraph">How many different styles of craft beer are available in the market? What are the most common styles?</p>
+                <button class="buttonOne"><a href="#TasteTitle">Part 2: Taste</a></button>
+                <p class = "standardParagraph">What are the differences in bitterness and alcohol content among different beer styles?</p>
+                <button class="buttonOne"><a href="#LocationTitle">Part 3: Location</a></button>
+                <p class = "standardParagraph">Where in the USA are the most common types of beer produced?</p>
             </div>
 
         </div>
@@ -77,7 +77,7 @@
         <div id="part1Container">
             <div id="StylesTitle">
                 <button class="partTag">Part 1: Styles</button>
-                <h3 class = "SectionTitle">In 2017, among the craft beer styles on the market, what is the most common style?</h3>
+                <h3 class = "SectionTitle">What was the most common style of craft beer in the American market in 2017?</h3>
             </div>
             <div id="StylesImage">
                 <img src="Images/StylesTreeMap01.svg" alt="Beer Styles Tree Map">
@@ -95,13 +95,15 @@
             <div id="StylesRationale">
                 <h3 class = "standardParaTitle">Design Rationale</h3>
                 <p class = "standardParagraph">
-                    The tree map shows the different beer styles in the market. The area of each rectangle represents the number of products of the style. The percentage of each style (the number of products of that style divided by the total number of products) were added to help readers perceive the quantitative differences between styles. The tree map was selected because it shows both the variety and the proportion. This align with my purpose, which is to show the diversity of beer styles and then identify some of the most common styles for later analysis.
+                    The treemap visualization displays various beer styles, with each rectangle's area indicating the market presence of that style, measured by the number of products. Alongside, I include the percentage of each style* to highlight quantitative differences. This treemap is chosen for its dual ability to show the variety of beer styles and their respective market shares, effectively aligning with my goal to showcase the diversity of the market and pinpoint the most common styles for further analysis.
+
+*The percentage of each style is calculated by dividing the number of products in that style by the total number of products.
                 </p>
             </div>
             <div id="StylesData">
                 <h3 class = "standardParaTitle">Data Analysis</h3>
                 <p class = "standardParagraph">
-                    All the entries of beer products was grouped by the styles. In order to make the Tree map more readable, some beer styles with infrequent entires were filtered out from this visualizations. The threshold is set to be 30 products. If a styles has less than 30 products on the market, then it is considered less relevant. Five beer styles with the most beer products were screened out during this process and used as a focused group in the following visualizations.
+                    Beer product entries were grouped by style. To enhance the treemap's readability, styles with fewer entries were excluded. The cutoff was set at 30 products; styles with fewer were were considered as less relevant. This process identified five styles with the most products, which were then used as a focus group in subsequent visualizations.
                 </p>
             </div>
         </div>
@@ -115,7 +117,9 @@
             <!-- TITLE  -->
             <div id="TasteTitle">
                 <button class="partTag">Part 2: Taste</button>
-                <h3 class = "SectionTitle">What are the differences in the bitterness of different styles of beer? </h3>
+                <h3 class = "SectionTitle">Exploring bitterness across beer styles </h3>
+                 <p class = "standardParagraph">
+                Dive into the bitterness landscape of different beer styles with the charts below. Each line chart maps out the number of beer products within various bitterness levels for a selected style. The x-axis measures the bitterness in IBU – the higher the number, the bitterer the beer. The y-axis counts the beers that match each bitterness score. Look for peaks in the lines; these highlight the most common levels of bitterness within each style. Just click on a style to start comparing!</p> 
             </div>
             <!-- LEGENT TEXT -->
             <div id="BitternessLegend">
